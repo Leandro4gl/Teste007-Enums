@@ -17,6 +17,14 @@ namespace Teste007_Enums
             };
             
             Console.WriteLine(order);
+
+            //Alterando o Enum para String
+            string txt = OrderStatus.PendingPayment.ToString();
+            Console.WriteLine(txt);
+
+            //Alterando string para Enum
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+            Console.WriteLine(os);
         }
     }
 }
